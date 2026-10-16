@@ -57,7 +57,7 @@ export default function App() {
     await new Promise((r) => setTimeout(r, 700));
 
     try {
-      const response = await fetch("http://127.0.0.1:8000/api/generate-prompt", {
+      const response = await fetch("https://promptflow-ai-4a89.onrender.com", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
